@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #edf1f8;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav button {
+    position: relative;
+    left: 40%;
+}
+
+nav p {
+    position: relative;
+    left: 40.5%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+nav ul li a:hover {
+    color: #d0cfcf;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.carPages {
+    height: 40px;
+    border-radius: 8px;
+    background: black;
+    margin-bottom: 20px;
+}
+
+.carList {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.carForm {
+    display: flex;
+    background: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.carImg {
+    width: 280px;
+    height: 200px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.mainCarDescription {
+    width: 100%;
+}
+
+.carTitle {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.carMileage {
+    width: 100%;
+    text-align: center;
+}
+
+.carPrice {
+    width: 100%;
+    text-align: center;
+}
+
+.buyCar {
+    display: flex;
+}
+
+.cartButton {
+    width: 210px;
+    background-color: #30a3ef;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    left: 240px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cartButton.added {
+    background-color: #008CBA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 550px;
+    width: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+
+.cartBtnMenu {
+    background-color: transparent;
+    background-image: url('/src/assets/icons/cart.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+
+.cart-items {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.cart-items ul {
+    padding: 0;
+    margin: 0;
+}
+
+.cart-items li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cbc9c9;
+}
+
+.cart-items img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.cart-items p {
+    margin: 0;
+}
+
+.closeModal {
+    background-color: #383737;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.closeModal:hover {
+    background-color: #505050;
+}
+
+.cartHeader {
+    display: flex;
+}
+
+.cartHeader button {
+    font-size: 14px;
+}
+
+.cartHeader button:first-of-type {
+    margin-left: 255px;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.cartContent{
+    display: flex;
+    align-items: center;
+}
+
+.cartDesc {
+    padding: 10px;
+}
+
+.cartDesc p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.carPageTitle {
+    width: 100%;
+    text-align: center;
+}
